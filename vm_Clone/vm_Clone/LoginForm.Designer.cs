@@ -30,9 +30,11 @@
 			this.textBox2 = new System.Windows.Forms.TextBox();
 			this.userName = new System.Windows.Forms.TextBox();
 			this.LoginButton = new System.Windows.Forms.Button();
-			this.textBox3 = new System.Windows.Forms.TextBox();
+			this.passWord = new System.Windows.Forms.TextBox();
 			this.forgetPasswordLabel = new System.Windows.Forms.LinkLabel();
 			this.checkBox1 = new System.Windows.Forms.CheckBox();
+			this.labelVersion = new System.Windows.Forms.Label();
+			this.signUpLink = new System.Windows.Forms.LinkLabel();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
 			this.SuspendLayout();
 			// 
@@ -59,7 +61,7 @@
 			this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
 			this.textBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.textBox1.ForeColor = System.Drawing.SystemColors.WindowFrame;
-			this.textBox1.Location = new System.Drawing.Point(28, 133);
+			this.textBox1.Location = new System.Drawing.Point(28, 128);
 			this.textBox1.Name = "textBox1";
 			this.textBox1.Size = new System.Drawing.Size(170, 18);
 			this.textBox1.TabIndex = 2;
@@ -70,7 +72,7 @@
 			this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
 			this.textBox2.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
 			this.textBox2.ForeColor = System.Drawing.SystemColors.WindowFrame;
-			this.textBox2.Location = new System.Drawing.Point(28, 157);
+			this.textBox2.Location = new System.Drawing.Point(28, 148);
 			this.textBox2.Name = "textBox2";
 			this.textBox2.Size = new System.Drawing.Size(216, 18);
 			this.textBox2.TabIndex = 3;
@@ -78,7 +80,7 @@
 			// 
 			// userName
 			// 
-			this.userName.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.userName.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.userName.ForeColor = System.Drawing.SystemColors.AppWorkspace;
 			this.userName.Location = new System.Drawing.Point(280, 48);
 			this.userName.Multiline = true;
@@ -86,6 +88,7 @@
 			this.userName.Size = new System.Drawing.Size(212, 31);
 			this.userName.TabIndex = 4;
 			this.userName.Text = "Username";
+			this.userName.Enter += new System.EventHandler(this.userName_Enter);
 			// 
 			// LoginButton
 			// 
@@ -102,16 +105,17 @@
 			this.LoginButton.UseVisualStyleBackColor = false;
 			this.LoginButton.Click += new System.EventHandler(this.LoginButton_Click);
 			// 
-			// textBox3
+			// passWord
 			// 
-			this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.textBox3.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-			this.textBox3.Location = new System.Drawing.Point(280, 96);
-			this.textBox3.Multiline = true;
-			this.textBox3.Name = "textBox3";
-			this.textBox3.Size = new System.Drawing.Size(212, 31);
-			this.textBox3.TabIndex = 7;
-			this.textBox3.Text = "Password";
+			this.passWord.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.passWord.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+			this.passWord.Location = new System.Drawing.Point(280, 96);
+			this.passWord.Multiline = true;
+			this.passWord.Name = "passWord";
+			this.passWord.Size = new System.Drawing.Size(212, 31);
+			this.passWord.TabIndex = 7;
+			this.passWord.Text = "Password";
+			this.passWord.Enter += new System.EventHandler(this.passWord_Enter);
 			// 
 			// forgetPasswordLabel
 			// 
@@ -124,6 +128,7 @@
 			this.forgetPasswordLabel.TabIndex = 8;
 			this.forgetPasswordLabel.TabStop = true;
 			this.forgetPasswordLabel.Text = "Forget Password?";
+			this.forgetPasswordLabel.Click += new System.EventHandler(this.forgetLabel_LinkClicked);
 			// 
 			// checkBox1
 			// 
@@ -137,15 +142,42 @@
 			this.checkBox1.Text = "Remember Me";
 			this.checkBox1.UseVisualStyleBackColor = true;
 			// 
+			// labelVersion
+			// 
+			this.labelVersion.AutoSize = true;
+			this.labelVersion.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.labelVersion.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+			this.labelVersion.Location = new System.Drawing.Point(220, 236);
+			this.labelVersion.Name = "labelVersion";
+			this.labelVersion.Size = new System.Drawing.Size(45, 15);
+			this.labelVersion.TabIndex = 10;
+			this.labelVersion.Text = "Version";
+			this.labelVersion.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			// 
+			// signUpLink
+			// 
+			this.signUpLink.AutoSize = true;
+			this.signUpLink.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.signUpLink.LinkColor = System.Drawing.Color.DodgerBlue;
+			this.signUpLink.Location = new System.Drawing.Point(82, 169);
+			this.signUpLink.Name = "signUpLink";
+			this.signUpLink.Size = new System.Drawing.Size(78, 13);
+			this.signUpLink.TabIndex = 11;
+			this.signUpLink.TabStop = true;
+			this.signUpLink.Text = "Sign Up Now!";
+			this.signUpLink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.signUpLink_LinkClicked);
+			// 
 			// LoginForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.White;
 			this.ClientSize = new System.Drawing.Size(519, 261);
+			this.Controls.Add(this.signUpLink);
+			this.Controls.Add(this.labelVersion);
 			this.Controls.Add(this.checkBox1);
 			this.Controls.Add(this.forgetPasswordLabel);
-			this.Controls.Add(this.textBox3);
+			this.Controls.Add(this.passWord);
 			this.Controls.Add(this.LoginButton);
 			this.Controls.Add(this.userName);
 			this.Controls.Add(this.textBox2);
@@ -159,6 +191,7 @@
 			this.Name = "LoginForm";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Vmoso Big Knowledge Widget Login";
+			this.Load += new System.EventHandler(this.LoginForm_Load);
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
@@ -173,9 +206,11 @@
 		private System.Windows.Forms.TextBox textBox2;
 		private System.Windows.Forms.TextBox userName;
 		private System.Windows.Forms.Button LoginButton;
-		private System.Windows.Forms.TextBox textBox3;
+		private System.Windows.Forms.TextBox passWord;
 		private System.Windows.Forms.LinkLabel forgetPasswordLabel;
 		private System.Windows.Forms.CheckBox checkBox1;
+		private System.Windows.Forms.Label labelVersion;
+		private System.Windows.Forms.LinkLabel signUpLink;
 	}
 }
 
