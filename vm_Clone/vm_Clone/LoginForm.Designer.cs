@@ -25,17 +25,18 @@
 		private void InitializeComponent() {
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginForm));
 			this.colorPanel = new System.Windows.Forms.Panel();
-			this.pictureBox1 = new System.Windows.Forms.PictureBox();
-			this.textBox1 = new System.Windows.Forms.TextBox();
-			this.textBox2 = new System.Windows.Forms.TextBox();
+			this.logoPicture = new System.Windows.Forms.PictureBox();
+			this.txtLine1 = new System.Windows.Forms.TextBox();
+			this.txtLine2 = new System.Windows.Forms.TextBox();
 			this.userName = new System.Windows.Forms.TextBox();
 			this.LoginButton = new System.Windows.Forms.Button();
 			this.passWord = new System.Windows.Forms.TextBox();
 			this.forgetPasswordLabel = new System.Windows.Forms.LinkLabel();
-			this.checkBox1 = new System.Windows.Forms.CheckBox();
+			this.rememberMe_checkBox = new System.Windows.Forms.CheckBox();
 			this.labelVersion = new System.Windows.Forms.Label();
 			this.signUpLink = new System.Windows.Forms.LinkLabel();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+			this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+			((System.ComponentModel.ISupportInitialize)(this.logoPicture)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// colorPanel
@@ -46,37 +47,37 @@
 			this.colorPanel.Size = new System.Drawing.Size(525, 11);
 			this.colorPanel.TabIndex = 0;
 			// 
-			// pictureBox1
+			// logoPicture
 			// 
-			this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-			this.pictureBox1.Location = new System.Drawing.Point(28, 48);
-			this.pictureBox1.Name = "pictureBox1";
-			this.pictureBox1.Size = new System.Drawing.Size(200, 64);
-			this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-			this.pictureBox1.TabIndex = 1;
-			this.pictureBox1.TabStop = false;
+			this.logoPicture.Image = ((System.Drawing.Image)(resources.GetObject("logoPicture.Image")));
+			this.logoPicture.Location = new System.Drawing.Point(28, 48);
+			this.logoPicture.Name = "logoPicture";
+			this.logoPicture.Size = new System.Drawing.Size(200, 64);
+			this.logoPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+			this.logoPicture.TabIndex = 1;
+			this.logoPicture.TabStop = false;
 			// 
-			// textBox1
+			// txtLine1
 			// 
-			this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			this.textBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.textBox1.ForeColor = System.Drawing.SystemColors.WindowFrame;
-			this.textBox1.Location = new System.Drawing.Point(28, 128);
-			this.textBox1.Name = "textBox1";
-			this.textBox1.Size = new System.Drawing.Size(170, 18);
-			this.textBox1.TabIndex = 2;
-			this.textBox1.Text = "Vmoso is where Knowledge";
+			this.txtLine1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+			this.txtLine1.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txtLine1.ForeColor = System.Drawing.SystemColors.WindowFrame;
+			this.txtLine1.Location = new System.Drawing.Point(28, 128);
+			this.txtLine1.Name = "txtLine1";
+			this.txtLine1.Size = new System.Drawing.Size(170, 18);
+			this.txtLine1.TabIndex = 2;
+			this.txtLine1.Text = "Vmoso is where Knowledge";
 			// 
-			// textBox2
+			// txtLine2
 			// 
-			this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			this.textBox2.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-			this.textBox2.ForeColor = System.Drawing.SystemColors.WindowFrame;
-			this.textBox2.Location = new System.Drawing.Point(28, 148);
-			this.textBox2.Name = "textBox2";
-			this.textBox2.Size = new System.Drawing.Size(216, 18);
-			this.textBox2.TabIndex = 3;
-			this.textBox2.Text = "Management meets collaboration";
+			this.txtLine2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+			this.txtLine2.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+			this.txtLine2.ForeColor = System.Drawing.SystemColors.WindowFrame;
+			this.txtLine2.Location = new System.Drawing.Point(28, 148);
+			this.txtLine2.Name = "txtLine2";
+			this.txtLine2.Size = new System.Drawing.Size(216, 18);
+			this.txtLine2.TabIndex = 3;
+			this.txtLine2.Text = "Management meets collaboration";
 			// 
 			// userName
 			// 
@@ -130,17 +131,17 @@
 			this.forgetPasswordLabel.Text = "Forget Password?";
 			this.forgetPasswordLabel.Click += new System.EventHandler(this.forgetLabel_LinkClicked);
 			// 
-			// checkBox1
+			// rememberMe_checkBox
 			// 
-			this.checkBox1.AutoSize = true;
-			this.checkBox1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.checkBox1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-			this.checkBox1.Location = new System.Drawing.Point(280, 132);
-			this.checkBox1.Name = "checkBox1";
-			this.checkBox1.Size = new System.Drawing.Size(99, 17);
-			this.checkBox1.TabIndex = 9;
-			this.checkBox1.Text = "Remember Me";
-			this.checkBox1.UseVisualStyleBackColor = true;
+			this.rememberMe_checkBox.AutoSize = true;
+			this.rememberMe_checkBox.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.rememberMe_checkBox.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+			this.rememberMe_checkBox.Location = new System.Drawing.Point(280, 132);
+			this.rememberMe_checkBox.Name = "rememberMe_checkBox";
+			this.rememberMe_checkBox.Size = new System.Drawing.Size(99, 17);
+			this.rememberMe_checkBox.TabIndex = 9;
+			this.rememberMe_checkBox.Text = "Remember Me";
+			this.rememberMe_checkBox.UseVisualStyleBackColor = true;
 			// 
 			// labelVersion
 			// 
@@ -175,14 +176,14 @@
 			this.ClientSize = new System.Drawing.Size(519, 261);
 			this.Controls.Add(this.signUpLink);
 			this.Controls.Add(this.labelVersion);
-			this.Controls.Add(this.checkBox1);
+			this.Controls.Add(this.rememberMe_checkBox);
 			this.Controls.Add(this.forgetPasswordLabel);
 			this.Controls.Add(this.passWord);
 			this.Controls.Add(this.LoginButton);
 			this.Controls.Add(this.userName);
-			this.Controls.Add(this.textBox2);
-			this.Controls.Add(this.textBox1);
-			this.Controls.Add(this.pictureBox1);
+			this.Controls.Add(this.txtLine2);
+			this.Controls.Add(this.txtLine1);
+			this.Controls.Add(this.logoPicture);
 			this.Controls.Add(this.colorPanel);
 			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.MaximizeBox = false;
@@ -192,7 +193,7 @@
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Vmoso Big Knowledge Widget Login";
 			this.Load += new System.EventHandler(this.LoginForm_Load);
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.logoPicture)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -201,16 +202,17 @@
 		#endregion
 
 		private System.Windows.Forms.Panel colorPanel;
-		private System.Windows.Forms.PictureBox pictureBox1;
-		private System.Windows.Forms.TextBox textBox1;
-		private System.Windows.Forms.TextBox textBox2;
+		private System.Windows.Forms.PictureBox logoPicture;
+		private System.Windows.Forms.TextBox txtLine1;
+		private System.Windows.Forms.TextBox txtLine2;
 		private System.Windows.Forms.TextBox userName;
 		private System.Windows.Forms.Button LoginButton;
 		private System.Windows.Forms.TextBox passWord;
 		private System.Windows.Forms.LinkLabel forgetPasswordLabel;
-		private System.Windows.Forms.CheckBox checkBox1;
+		private System.Windows.Forms.CheckBox rememberMe_checkBox;
 		private System.Windows.Forms.Label labelVersion;
 		private System.Windows.Forms.LinkLabel signUpLink;
+		private System.ComponentModel.BackgroundWorker backgroundWorker1;
 	}
 }
 
