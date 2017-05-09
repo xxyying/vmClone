@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.26403.7
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "vm_Clone", "vm_Clone\vm_Clone.csproj", "{33565961-5E35-4CE8-8577-864154EABB2C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VmosoApiClient", "VmosoApiClient\VmosoApiClient.csproj", "{1E014A46-7F8D-4EDD-A875-04156AD3F720}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{33565961-5E35-4CE8-8577-864154EABB2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{33565961-5E35-4CE8-8577-864154EABB2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{33565961-5E35-4CE8-8577-864154EABB2C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E014A46-7F8D-4EDD-A875-04156AD3F720}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E014A46-7F8D-4EDD-A875-04156AD3F720}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E014A46-7F8D-4EDD-A875-04156AD3F720}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E014A46-7F8D-4EDD-A875-04156AD3F720}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

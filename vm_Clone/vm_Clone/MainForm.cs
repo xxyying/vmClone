@@ -19,6 +19,8 @@ namespace vm_Clone {
 			subLinkPanel.Visible = false;
 			linkSortUp.Visible = false;
 			link_button.Visible = true;
+			streamPanel.Visible = false;
+
 		}
 
 
@@ -37,6 +39,10 @@ namespace vm_Clone {
 			subLinkPanel.Visible = false;
 			linkSortUp.Visible = false ;
 			floatMenu.Location = tmp;
+		}
+
+		private void stream_button_Click(object sender, EventArgs e) {
+			streamPanel.Visible = true;
 		}
 	}
 }
