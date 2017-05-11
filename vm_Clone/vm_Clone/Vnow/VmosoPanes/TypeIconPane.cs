@@ -7,10 +7,10 @@ using System.Windows.Forms;
 using System.Drawing;
 using System.IO;
 using System.Drawing.Imaging;
-using VmosoBKW.Basics;
+using vm_Clone.Basics;
 using VmosoApiClient.Client;
 
-namespace VmosoBKW.VmosoPanes
+namespace vm_Clone.VmosoPanes
 {
   public class TypeIconPane : VmosoTileBasePane
   {

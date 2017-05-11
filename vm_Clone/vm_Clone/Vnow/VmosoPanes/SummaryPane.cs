@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Windows.Forms;
 using System.Drawing;
-using VmosoBKW.Basics;
-using VmosoApiClient.Client;
+using vm_Clone.Basics;
+//using VmosoApiClient.Client;
 
-namespace VmosoBKW.VmosoPanes
+namespace vm_Clone.VmosoPanes
 {
   public class SummaryPane : VmosoTileBasePane
   {

@@ -30,7 +30,6 @@
 			this.settings_button = new System.Windows.Forms.Button();
 			this.stream_button = new System.Windows.Forms.Button();
 			this.contacts_button = new System.Windows.Forms.Button();
-			this.linkSortUp = new System.Windows.Forms.Button();
 			this.pictureBox1 = new System.Windows.Forms.PictureBox();
 			this.link_button = new System.Windows.Forms.Button();
 			this.subLinkPanel = new System.Windows.Forms.Panel();
@@ -39,6 +38,7 @@
 			this.checkBox3 = new System.Windows.Forms.CheckBox();
 			this.checkBox2 = new System.Windows.Forms.CheckBox();
 			this.checkBox1 = new System.Windows.Forms.CheckBox();
+			this.linkSortUp = new System.Windows.Forms.Button();
 			this.streamPanel = new System.Windows.Forms.Panel();
 			this.sidePanel.SuspendLayout();
 			this.floatMenu.SuspendLayout();
@@ -57,9 +57,9 @@
 			// sidePanel
 			// 
 			this.sidePanel.BackColor = System.Drawing.SystemColors.ButtonFace;
+			this.sidePanel.Controls.Add(this.link_button);
 			this.sidePanel.Controls.Add(this.floatMenu);
 			this.sidePanel.Controls.Add(this.pictureBox1);
-			this.sidePanel.Controls.Add(this.link_button);
 			this.sidePanel.Controls.Add(this.subLinkPanel);
 			this.sidePanel.Controls.Add(this.linkSortUp);
 			this.sidePanel.Location = new System.Drawing.Point(0, 12);
@@ -123,27 +123,6 @@
 			this.contacts_button.Text = "    Contacts";
 			this.contacts_button.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.contacts_button.UseVisualStyleBackColor = true;
-			// 
-			// linkSortUp
-			// 
-			this.linkSortUp.BackColor = System.Drawing.SystemColors.ButtonFace;
-			this.linkSortUp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-			this.linkSortUp.FlatAppearance.BorderColor = System.Drawing.Color.White;
-			this.linkSortUp.FlatAppearance.BorderSize = 0;
-			this.linkSortUp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.linkSortUp.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.linkSortUp.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-			this.linkSortUp.Image = ((System.Drawing.Image)(resources.GetObject("linkSortUp.Image")));
-			this.linkSortUp.Location = new System.Drawing.Point(0, 109);
-			this.linkSortUp.Name = "linkSortUp";
-			this.linkSortUp.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			this.linkSortUp.Size = new System.Drawing.Size(112, 43);
-			this.linkSortUp.TabIndex = 4;
-			this.linkSortUp.Text = "    Links";
-			this.linkSortUp.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.linkSortUp.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-			this.linkSortUp.UseVisualStyleBackColor = false;
-			this.linkSortUp.Click += new System.EventHandler(this.linkSortUp_Click);
 			// 
 			// pictureBox1
 			// 
@@ -246,6 +225,27 @@
 			this.checkBox1.TabIndex = 0;
 			this.checkBox1.Text = "All";
 			this.checkBox1.UseVisualStyleBackColor = true;
+			// 
+			// linkSortUp
+			// 
+			this.linkSortUp.BackColor = System.Drawing.SystemColors.ButtonFace;
+			this.linkSortUp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+			this.linkSortUp.FlatAppearance.BorderColor = System.Drawing.Color.White;
+			this.linkSortUp.FlatAppearance.BorderSize = 0;
+			this.linkSortUp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.linkSortUp.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.linkSortUp.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+			this.linkSortUp.Image = ((System.Drawing.Image)(resources.GetObject("linkSortUp.Image")));
+			this.linkSortUp.Location = new System.Drawing.Point(0, 109);
+			this.linkSortUp.Name = "linkSortUp";
+			this.linkSortUp.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			this.linkSortUp.Size = new System.Drawing.Size(112, 43);
+			this.linkSortUp.TabIndex = 4;
+			this.linkSortUp.Text = "    Links";
+			this.linkSortUp.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.linkSortUp.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+			this.linkSortUp.UseVisualStyleBackColor = false;
+			this.linkSortUp.Click += new System.EventHandler(this.linkSortUp_Click);
 			// 
 			// streamPanel
 			// 

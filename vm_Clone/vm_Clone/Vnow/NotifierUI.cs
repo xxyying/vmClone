@@ -3,8 +3,9 @@ using System.Diagnostics;
 using System.Drawing;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
+using vm_Clone;
 
-namespace VmosoBKW
+namespace vm_Clone
 {
   public  class NotifierUI : System.Windows.Forms.Form
   {

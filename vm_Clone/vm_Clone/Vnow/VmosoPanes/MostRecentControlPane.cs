@@ -2,7 +2,7 @@
 using System.Drawing;
 using System.Windows.Forms;
 
-namespace VmosoBKW.VmosoPanes
+namespace vm_Clone.VmosoPanes
 {
   public class MostRecentControlPane : Panel
   {

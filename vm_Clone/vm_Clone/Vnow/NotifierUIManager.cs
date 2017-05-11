@@ -7,13 +7,13 @@ using System.Windows.Forms;
 using System.Drawing.Drawing2D;
 using System.Drawing;
 using System.Diagnostics;
-using VmosoBKW.VmosoPanes;
-using VmosoBKW.VmosoForms;
+using vm_Clone.VmosoPanes;
+using vm_Clone.VmosoForms;
 using VmosoPushClient;
 using VmosoApiClient.Client;
 
 
-namespace VmosoBKW
+namespace vm_Clone
 {
   public class NotifierUIManager : System.Windows.Forms.Form
   {

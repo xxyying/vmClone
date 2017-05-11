@@ -4,7 +4,7 @@ using System.Drawing;
 using VmosoApiClient.Client;
 
 
-namespace VmosoBKW.Basics
+namespace vm_Clone.Basics
 {
   public class VmosoTileBasePane : Panel
   {

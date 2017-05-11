@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Windows.Forms;
 using System.Drawing;
 
-namespace VmosoBKW.VmosoForms
+namespace vm_Clone.VmosoForms
 {
   public class MostRecentMessageForm : Form
   {

@@ -7,8 +7,9 @@ using System.Drawing;
 using System.Windows.Forms;
 using System.Drawing.Imaging;
 using System.IO;
+using vm_Clone;
 
-namespace VmosoBKW
+namespace vm_Clone
 {
   public class CountIcon
   {

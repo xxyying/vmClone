@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace VmosoBKW
+namespace vm_Clone
 {
   public class DirectUrlBuilder
   {

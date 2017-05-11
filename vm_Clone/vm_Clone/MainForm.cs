@@ -27,6 +27,7 @@ namespace vm_Clone {
 		private void link_button_Click(object sender, EventArgs e) {
 			showList = true;
 			if (showList == true) {
+				link_button.Visible = false;
 				subLinkPanel.Visible = true;
 				linkSortUp.Visible = true;
 			}
@@ -36,6 +37,7 @@ namespace vm_Clone {
 
 		private void linkSortUp_Click(object sender, EventArgs e) {
 			showList = false;
+			link_button.Visible = true;
 			subLinkPanel.Visible = false;
 			linkSortUp.Visible = false ;
 			floatMenu.Location = tmp;

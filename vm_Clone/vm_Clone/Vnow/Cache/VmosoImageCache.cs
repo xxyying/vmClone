@@ -7,8 +7,7 @@ using System.Drawing;
 using System.Web.Script.Serialization;
 using System.IO;
 
-namespace VmosoBKW.Cache
-{
+namespace vm_Clone.Cache {
   public class VmosoImageCache
   {
     private readonly string defalutCacheFolder = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "/" + "BroadVision" + "/Cache";

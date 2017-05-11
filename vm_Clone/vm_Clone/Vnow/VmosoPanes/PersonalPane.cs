@@ -3,11 +3,10 @@ using System.Windows.Forms;
 using System.Drawing;
 using System.IO;
 using System.Drawing.Imaging;
-using VmosoBKW.Cache;
+using vm_Clone.Cache;
 using VmosoApiClient.Client;
 
-namespace VmosoBKW.VmosoPanes
-{
+namespace vm_Clone.VmosoPanes {
   public class PersonalPane : Basics.VmosoTileBasePane
   {
     private System.Windows.Forms.PictureBox picture;

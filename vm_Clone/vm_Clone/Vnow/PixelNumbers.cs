@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace VmosoBKW
+namespace vm_Clone
 {
   //4*5 2 dimension array for each number
   public class PixelNumbers

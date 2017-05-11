@@ -11,10 +11,10 @@ using System.Windows.Forms;
 using Microsoft.Win32;
 using Newtonsoft.Json;
 using System.Drawing.Imaging;
-using VmosoBKW.Cache;
 using VmosoApiClient.Client;
+using vm_Clone.Cache;
 
-namespace VmosoBKW
+namespace vm_Clone
 {
   public class VmosoNotifierTile : NotifierUI
   {
