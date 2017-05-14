@@ -11,6 +11,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WampSharp", "..\..\..\..\..
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WampSharp.Default", "..\..\..\..\..\..\developer\vbkw_copy\WampSharp.Default\WampSharp.Default.csproj", "{6AB75291-D296-457E-88A3-B41B16A1A247}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HTMLEditorControl", "..\..\..\..\..\..\developer\vbkw_copy\HtmlEditorControl\HTMLEditorControl.csproj", "{5873DE0F-6853-4C8E-91A4-7A6861069A9A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HtmlRenderer.WinForms", "..\..\..\..\..\..\developer\vbkw_copy\HtmlRenderer.WinForms\HtmlRenderer.WinForms.csproj", "{1B058920-24B4-4140-8AE7-C8C6C38CA52D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HtmlRenderer", "..\..\..\..\..\..\developer\vbkw_copy\HtmlRenderer\HtmlRenderer.csproj", "{FE611685-391F-4E3E-B27E-D3150E51E49B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +39,18 @@ Global
 		{6AB75291-D296-457E-88A3-B41B16A1A247}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6AB75291-D296-457E-88A3-B41B16A1A247}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6AB75291-D296-457E-88A3-B41B16A1A247}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5873DE0F-6853-4C8E-91A4-7A6861069A9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5873DE0F-6853-4C8E-91A4-7A6861069A9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5873DE0F-6853-4C8E-91A4-7A6861069A9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5873DE0F-6853-4C8E-91A4-7A6861069A9A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B058920-24B4-4140-8AE7-C8C6C38CA52D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B058920-24B4-4140-8AE7-C8C6C38CA52D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B058920-24B4-4140-8AE7-C8C6C38CA52D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B058920-24B4-4140-8AE7-C8C6C38CA52D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE611685-391F-4E3E-B27E-D3150E51E49B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE611685-391F-4E3E-B27E-D3150E51E49B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE611685-391F-4E3E-B27E-D3150E51E49B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE611685-391F-4E3E-B27E-D3150E51E49B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

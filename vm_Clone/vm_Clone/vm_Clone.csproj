@@ -39,6 +39,9 @@
     <Reference Include="Fleck, Version=0.13.0.57, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Fleck.0.13.0.57\lib\net40\Fleck.dll</HintPath>
     </Reference>
+    <Reference Include="HtmlAgilityPack">
+      <HintPath>..\..\..\..\..\..\..\developer\vmosobkw_copy\packages\HtmlAgilityPack.1.4.9.5\lib\Net45\HtmlAgilityPack.dll</HintPath>
+    </Reference>
     <Reference Include="log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
       <HintPath>..\packages\log4net.2.0.8\lib\net45-full\log4net.dll</HintPath>
     </Reference>
@@ -127,7 +130,20 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\GlobalResources.Designer.cs" />
+    <Compile Include="VmosoAHAClient\AHAClient.cs" />
+    <Compile Include="VmosoAHAClient\AHAItem.cs" />
+    <Compile Include="VmosoContactClient\ContactClient.cs" />
+    <Compile Include="VmosoContactClient\ContactItem.cs" />
     <Compile Include="VmosoPushClient\PushClient.cs" />
+    <Compile Include="VmosoShareClient\ShareClient.cs" />
+    <Compile Include="VmosoShareClient\ShareFileItem.cs" />
+    <Compile Include="VmosoShareClient\ShareItem.cs" />
+    <Compile Include="VmosoShareClient\ShareLinkItem.cs" />
+    <Compile Include="VmosoShareClient\ShareSpace.cs" />
+    <Compile Include="VmosoStreamClient\StreamClient.cs" />
+    <Compile Include="VmosoStreamClient\StreamComment.cs" />
+    <Compile Include="VmosoStreamClient\StreamItem.cs" />
+    <Compile Include="VmosoStreamClient\StreamRule.cs" />
     <Compile Include="Vnow\Basics\VmosoTileBasePane.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -205,6 +221,18 @@
     <Folder Include="Resources\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\..\..\developer\vbkw_copy\HtmlEditorControl\HTMLEditorControl.csproj">
+      <Project>{5873de0f-6853-4c8e-91a4-7a6861069a9a}</Project>
+      <Name>HTMLEditorControl</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\..\..\developer\vbkw_copy\HtmlRenderer.WinForms\HtmlRenderer.WinForms.csproj">
+      <Project>{1b058920-24b4-4140-8ae7-c8c6c38ca52d}</Project>
+      <Name>HtmlRenderer.WinForms</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\..\..\developer\vbkw_copy\HtmlRenderer\HtmlRenderer.csproj">
+      <Project>{fe611685-391f-4e3e-b27e-d3150e51e49b}</Project>
+      <Name>HtmlRenderer</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\..\..\..\..\..\developer\vbkw_copy\VmosoApiClient\VmosoApiClient.csproj">
       <Project>{7ed0c680-1c3b-4dc0-9d78-0f77fd9a4c83}</Project>
       <Name>VmosoApiClient</Name>

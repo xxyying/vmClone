@@ -59,5 +59,14 @@ namespace vm_Clone.Properties {
                 resourceCulture = value;
             }
         }
-    }
+
+		/// <summary>
+		///   Busca una cadena traducida similar a Connecting ....
+		/// </summary>
+		internal static string message_connecting {
+			get {
+				return ResourceManager.GetString("message_connecting", resourceCulture);
+			}
+		}
+	}
 }

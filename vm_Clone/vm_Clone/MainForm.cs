@@ -4,12 +4,36 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using VmosoApiClient.Api;
+using VmosoApiClient.Client;
+using VmosoApiClient.Model;
+
+using VmosoAHAClient;
+using VmosoShareClient;
+using VmosoContactClient;
+using VmosoStreamClient;
+using VmosoPushClient;
+
 namespace vm_Clone {
 	public partial class MainForm : Form {
+
+		//[DllImport("user32.dll", CharSet = CharSet.Auto, CallingConvention = CallingConvention.StdCall)]
+		public const String APP_NAME = "Vmoso BKW";
+		public const String CACHE_SUBFOLDER = "cache";
+		public const String AHA_CACHE_SUBFOLDER = "aha";
+		public const String SHARE_CACHE_SUBFOLDER = "share";
+		public const String SPACES_CACHE_SUBFOLDER = "spaces";
+		public const String CONTACTS_CACHE_SUBFOLDER = "contacts";
+
+		public VmosoSession Session { get; set; }
+		ContactClient contactClient { get; set; }
+		StreamClient streamClient { get; set; }
+		PushClient pushClient { get; set; }
 
 		bool showList = false;
 		Point tmp = new Point(0, 0);

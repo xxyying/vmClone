@@ -36,6 +36,7 @@
 			this.labelVersion = new System.Windows.Forms.Label();
 			this.signUpLink = new System.Windows.Forms.LinkLabel();
 			this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+			this.toolStripStatusLabelMessage = new System.Windows.Forms.StatusStrip();
 			((System.ComponentModel.ISupportInitialize)(this.logoPicture)).BeginInit();
 			this.SuspendLayout();
 			// 
@@ -168,12 +169,21 @@
 			this.signUpLink.Text = "Sign Up Now!";
 			this.signUpLink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.signUpLink_LinkClicked);
 			// 
+			// toolStripStatusLabelMessage
+			// 
+			this.toolStripStatusLabelMessage.Location = new System.Drawing.Point(0, 239);
+			this.toolStripStatusLabelMessage.Name = "toolStripStatusLabelMessage";
+			this.toolStripStatusLabelMessage.Size = new System.Drawing.Size(519, 22);
+			this.toolStripStatusLabelMessage.TabIndex = 12;
+			this.toolStripStatusLabelMessage.Text = "statusStrip1";
+			// 
 			// LoginForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.White;
 			this.ClientSize = new System.Drawing.Size(519, 261);
+			this.Controls.Add(this.toolStripStatusLabelMessage);
 			this.Controls.Add(this.signUpLink);
 			this.Controls.Add(this.labelVersion);
 			this.Controls.Add(this.rememberMe_checkBox);
@@ -213,6 +223,7 @@
 		private System.Windows.Forms.Label labelVersion;
 		private System.Windows.Forms.LinkLabel signUpLink;
 		private System.ComponentModel.BackgroundWorker backgroundWorker1;
+		private System.Windows.Forms.StatusStrip toolStripStatusLabelMessage;
 	}
 }
 
