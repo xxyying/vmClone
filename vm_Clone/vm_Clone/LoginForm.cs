@@ -9,26 +9,32 @@ using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Reflection;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using VmosoApiClient.Client;
+using VmosoContactClient;
+using VmosoPushClient;
+using VmosoStreamClient;
+using System.Globalization;
 
 namespace vm_Clone {
 	public partial class LoginForm : Form {
 		RegistryKey rkApp;
 		MainForm mainForm;
-		public static extern void mouse_event(uint dwFlags, uint dx, uint dy, uint cButtons, uint dwExtraInfo);
+		//public static extern void mouse_event(uint dwFlags, uint dx, uint dy, uint cButtons, uint dwExtraInfo);
+		//[DllImport("user32.dll", CharSet = CharSet.Auto, CallingConvention = CallingConvention.StdCall)]
 
 		private const int STATUS_INFO = 3;
 		private const int STATUS_WARNING = 2;
 		private const int STATUS_ERROR = 1;
 
-		//Mouse actions
-		private const int MOUSEEVENTF_LEFTDOWN = 0x02;
-		private const int MOUSEEVENTF_LEFTUP = 0x04;
-		private const int MOUSEEVENTF_RIGHTDOWN = 0x08;
-		private const int MOUSEEVENTF_RIGHTUP = 0x10;
+		////Mouse actions
+		//private const int MOUSEEVENTF_LEFTDOWN = 0x02;
+		//private const int MOUSEEVENTF_LEFTUP = 0x04;
+		//private const int MOUSEEVENTF_RIGHTDOWN = 0x08;
+		//private const int MOUSEEVENTF_RIGHTUP = 0x10;
 
 		public const String APP_NAME = "Vmoso BKW";
 		public const String CACHE_SUBFOLDER = "cache";
@@ -37,29 +43,58 @@ namespace vm_Clone {
 		public const String SPACES_CACHE_SUBFOLDER = "spaces";
 		public const String CONTACTS_CACHE_SUBFOLDER = "contacts";
 
+		const string USERNAME_HINT = "Username";
+		const string PASSWORD_HINT = "Password";
+
+
 		private static readonly ILog log = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 		public VmosoSession Session { get; set; }
 
+		ContactClient contactClient { get; set; }
+		StreamClient streamClient { get; set; }
+		PushClient pushClient { get; set; }
+
+		String dataFolder { get; set; }
 
 		HtmlEditorControl htmlEditor = new HtmlEditorControl();
 
-
-
-		public LoginForm() {
+		public LoginForm(String dataFolder) {
+			this.dataFolder = dataFolder;
 			InitializeComponent();
 		}
 
 		private void LoginForm_Load(object sender, EventArgs e) {
-			rkApp = Registry.CurrentUser.OpenSubKey("SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run", true);
+			Console.WriteLine("Loading LoginForm...");
+			Console.WriteLine("Application data folder: {0}", dataFolder);
 
-			//refreshControls();
+			rkApp = Registry.CurrentUser.OpenSubKey("SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run", true);
+			mainForm = Application.OpenForms["MainForm"] as MainForm;
+
+			refreshLoginForm();
 
 			Assembly assembly = Assembly.GetExecutingAssembly();
 			FileVersionInfo fileVersionInfo = FileVersionInfo.GetVersionInfo(assembly.Location);
 			labelVersion.Text = "VmosoBKW " + fileVersionInfo.ProductVersion;
 
-			mainForm.Session = null;
+		}
 
+		private void LoginForm_Shown(object sender, EventArgs e) {
+			if (Session == null) {
+				if (Properties.Settings.Default.RememberMe) {
+					if (Properties.Settings.Default.VmosoUsername != "UserName" || Properties.Settings.Default.VmosoPassword != "Passward" 
+							|| Properties.Settings.Default.VmosoUsername != "" || Properties.Settings.Default.VmosoPassword != "") {
+						login();
+					} else {
+						LoginForm loginForm = new LoginForm(dataFolder);
+						login();
+					}
+				} else {
+					LoginForm loginForm = new LoginForm(dataFolder);
+					login();
+					Console.WriteLine("Login form shows...");
+					
+				}
+			}
 		}
 
 		// Jump to reset password page 
@@ -77,7 +112,6 @@ namespace vm_Clone {
 		private void userName_Enter(object sender, EventArgs e) {
 			userName.Text = Properties.Settings.Default.VmosoUsername;
 			userName.ForeColor = Color.Black;
-			//string txt = userName.Text;
 			//Console.WriteLine("this is username: {0}", txt);
 		}
 
@@ -85,33 +119,19 @@ namespace vm_Clone {
 			passWord.Text = Properties.Settings.Default.VmosoPassword;
 			passWord.ForeColor = Color.Black;
 			passWord.PasswordChar = '*';
-			//String pwd = passWord.Text;
 			//Console.WriteLine("This is password: {0}", pwd);
-		}
-
-
-		private void LoginForm_Shown(object sender, EventArgs e) {
-			if (Session == null) {
-				if (Properties.Settings.Default.RememberMe) {
-					if (Properties.Settings.Default.VmosoUsername != "" || Properties.Settings.Default.VmosoPassword != "") {
-						login();
-					} else {
-						LoginForm loginForm = new LoginForm();
-						loginForm.Show();
-					}
-				} else {
-					LoginForm loginForm = new LoginForm();
-					loginForm.Show();
-
-				}
-			}
-		}
+		}	
 
 		public void login() {
-			if (Properties.Settings.Default.VmosoUsername != "" || Properties.Settings.Default.VmosoPassword != "") {
+			if (Properties.Settings.Default.VmosoUsername != USERNAME_HINT 
+				|| Properties.Settings.Default.VmosoPassword != PASSWORD_HINT
+				|| Properties.Settings.Default.VmosoUsername != "" 
+				|| Properties.Settings.Default.VmosoPassword != "") {
 				showStatus(Properties.Resources.message_connecting, STATUS_INFO);
-				//backgroundLoginWorker.RunWorkerAsync();
 			}
+			
+			// check authentication
+
 		}
 
 		private void showStatus(String message, int status) {
@@ -130,20 +150,41 @@ namespace vm_Clone {
 			toolStripStatusLabelMessage.Text = message;
 		}
 
+
+
 		private void LoginButton_Click(object sender, EventArgs e) {
 			Form mainForm = new MainForm();
 
-			String uname = userName.Text;
-			String pword = passWord.Text;
+			Properties.Settings.Default.RememberMe = rememberMe_checkBox.Checked;
+			if (Properties.Settings.Default.RememberMe) {
+				Properties.Settings.Default.VmosoUsername = userName.Text;
+				Properties.Settings.Default.VmosoPassword = passWord.Text;
+			} else {
+				Properties.Settings.Default.VmosoUsername = "";
+				Properties.Settings.Default.VmosoPassword = "";
+			}
 
-			Console.WriteLine("Typed in username: {0}", uname);
-			Console.WriteLine("Typed in password: {0}", pword);
+			Properties.Settings.Default.Save();
+
+			Console.WriteLine("Typed in username: {0}", userName.Text);
+			Console.WriteLine("Typed in password: {0}", passWord.Text);
 
 			this.Visible = false;
 			mainForm.ShowDialog();
-			this.Close();
+			//this.Close();
 		}
 
 
+		private void refreshLoginForm() {
+			if (Session != null) {
+				LoginButton.Enabled = false;
+				userName.Enabled = false;
+				passWord.Enabled = false;
+			} else {
+				LoginButton.Enabled = true;
+				userName.Enabled = true;
+				passWord.Enabled = true;
+			}
+		}
 	}
 }

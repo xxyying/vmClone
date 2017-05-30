@@ -73,7 +73,7 @@ namespace vm_Clone.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
         public bool RememberMe {
             get {
                 return ((bool)(this["RememberMe"]));
@@ -85,7 +85,7 @@ namespace vm_Clone.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("en")]
+        [global::System.Configuration.DefaultSettingValueAttribute("EN")]
         public string Language {
             get {
                 return ((string)(this["Language"]));

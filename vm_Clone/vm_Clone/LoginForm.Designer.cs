@@ -1,4 +1,6 @@
-﻿namespace vm_Clone {
+﻿using System.Windows.Forms;
+
+namespace vm_Clone {
 	partial class LoginForm {
 		/// <summary>
 		/// Required designer variable.
@@ -35,7 +37,6 @@
 			this.rememberMe_checkBox = new System.Windows.Forms.CheckBox();
 			this.labelVersion = new System.Windows.Forms.Label();
 			this.signUpLink = new System.Windows.Forms.LinkLabel();
-			this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
 			this.toolStripStatusLabelMessage = new System.Windows.Forms.StatusStrip();
 			((System.ComponentModel.ISupportInitialize)(this.logoPicture)).BeginInit();
 			this.SuspendLayout();
@@ -149,7 +150,7 @@
 			this.labelVersion.AutoSize = true;
 			this.labelVersion.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.labelVersion.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-			this.labelVersion.Location = new System.Drawing.Point(220, 236);
+			this.labelVersion.Location = new System.Drawing.Point(220, 224);
 			this.labelVersion.Name = "labelVersion";
 			this.labelVersion.Size = new System.Drawing.Size(45, 15);
 			this.labelVersion.TabIndex = 10;
@@ -203,6 +204,7 @@
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Vmoso Big Knowledge Widget Login";
 			this.Load += new System.EventHandler(this.LoginForm_Load);
+			this.Shown += new System.EventHandler(this.LoginForm_Shown);
 			((System.ComponentModel.ISupportInitialize)(this.logoPicture)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
@@ -222,8 +224,8 @@
 		private System.Windows.Forms.CheckBox rememberMe_checkBox;
 		private System.Windows.Forms.Label labelVersion;
 		private System.Windows.Forms.LinkLabel signUpLink;
-		private System.ComponentModel.BackgroundWorker backgroundWorker1;
-		private System.Windows.Forms.StatusStrip toolStripStatusLabelMessage;
+		private System.Windows.Forms.NotifyIcon notifyIcon;
+		private StatusStrip toolStripStatusLabelMessage;
 	}
 }
 

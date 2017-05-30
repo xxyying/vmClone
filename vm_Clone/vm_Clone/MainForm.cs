@@ -22,7 +22,6 @@ using VmosoPushClient;
 namespace vm_Clone {
 	public partial class MainForm : Form {
 
-		//[DllImport("user32.dll", CharSet = CharSet.Auto, CallingConvention = CallingConvention.StdCall)]
 		public const String APP_NAME = "Vmoso BKW";
 		public const String CACHE_SUBFOLDER = "cache";
 		public const String AHA_CACHE_SUBFOLDER = "aha";
@@ -36,20 +35,27 @@ namespace vm_Clone {
 		PushClient pushClient { get; set; }
 
 		bool showList = false;
-		Point tmp = new Point(0, 0);
+		private Point tmp;
+
+
 
 		public MainForm() {
 			InitializeComponent();
-			subLinkPanel.Visible = false;
-			linkSortUp.Visible = false;
-			link_button.Visible = true;
-			streamPanel.Visible = false;
+			Initialize();
 
 		}
 
+		private void Initialize() {
+			tmp = new Point(0, 0);
+			subLinkPanel.Visible = false;
+			linkSortUp.Visible = false;
+			link_button.Visible = true;
+			link_Panel.Visible = true;
+		}
 
 		private void link_button_Click(object sender, EventArgs e) {
 			showList = true;
+			link_Panel.Visible = true;
 			if (showList == true) {
 				link_button.Visible = false;
 				subLinkPanel.Visible = true;
@@ -68,7 +74,31 @@ namespace vm_Clone {
 		}
 
 		private void stream_button_Click(object sender, EventArgs e) {
-			streamPanel.Visible = true;
+			//streamPanel.Visible = true;
 		}
+
+		private void searchTextPanel_Paint(object sender, PaintEventArgs e) {
+			Panel p = sender as Panel;
+			ControlPaint.DrawBorder(e.Graphics, p.DisplayRectangle, Color.Silver, ButtonBorderStyle.Solid);
+		}
+
+		private void searchTextBox_Enter(object sender, EventArgs e) {
+			searchTextBox.Text = "";
+			searchTextBox.ForeColor = Color.Black;
+
+		}
+
+		private void MainForm_Move(object sender, EventArgs e) {
+			if(this.WindowState == FormWindowState.Minimized) {
+				this.Hide();
+				NotifyIcon.ShowBalloonTip(1000, "Important Notice", "Vmoso Big Knowledgement Widget hidden. Click to show.", ToolTipIcon.Info);
+			}
+		}
+
+		private void NotifyIcon_MouseDoubleClick(object sender, MouseEventArgs e) {
+			this.Show();
+		}
+
+
 	}
 }

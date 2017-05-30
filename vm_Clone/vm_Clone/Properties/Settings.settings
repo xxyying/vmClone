@@ -15,10 +15,10 @@
       <Value Profile="(Default)">CID-ebe77e0f-923a-4a75-b419-13242b8d1bbd</Value>
     </Setting>
     <Setting Name="RememberMe" Type="System.Boolean" Scope="User">
-      <Value Profile="(Default)">False</Value>
+      <Value Profile="(Default)">True</Value>
     </Setting>
     <Setting Name="Language" Type="System.String" Scope="User">
-      <Value Profile="(Default)">en</Value>
+      <Value Profile="(Default)">EN</Value>
     </Setting>
     <Setting Name="EmailLink" Type="System.String" Scope="Application">
       <Value Profile="(Default)">{0}: {1}&lt;{2}@{3}&gt;</Value>
