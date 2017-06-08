@@ -12,7 +12,7 @@
       <Value Profile="(Default)">https://www.vmoso.com</Value>
     </Setting>
     <Setting Name="VmosoCid" Type="System.String" Scope="User">
-      <Value Profile="(Default)">CID-ebe77e0f-923a-4a75-b419-13242b8d1bbd</Value>
+      <Value Profile="(Default)">CID-ebe77e0f-923a-4a75-b419-13242b8d1bbe</Value>
     </Setting>
     <Setting Name="RememberMe" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">True</Value>

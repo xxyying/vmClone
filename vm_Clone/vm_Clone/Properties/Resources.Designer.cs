@@ -68,5 +68,14 @@ namespace vm_Clone.Properties {
 				return ResourceManager.GetString("message_connecting", resourceCulture);
 			}
 		}
+
+		/// <summary>
+		///   Busca una cadena traducida similar a Login error.
+		/// </summary>
+		internal static string error_login {
+			get {
+				return ResourceManager.GetString("error_login", resourceCulture);
+			}
+		}
 	}
 }

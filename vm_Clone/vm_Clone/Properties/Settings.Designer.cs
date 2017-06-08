@@ -61,7 +61,7 @@ namespace vm_Clone.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("CID-ebe77e0f-923a-4a75-b419-13242b8d1bbd")]
+        [global::System.Configuration.DefaultSettingValueAttribute("CID-ebe77e0f-923a-4a75-b419-13242b8d1bbe")]
         public string VmosoCid {
             get {
                 return ((string)(this["VmosoCid"]));

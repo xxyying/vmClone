@@ -409,6 +409,7 @@
 			this.Name = "MainForm";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Vmoso Big Knowledge Widget";
+			this.Load += new System.EventHandler(this.MainForm_Load);
 			this.Move += new System.EventHandler(this.MainForm_Move);
 			this.sidePanel.ResumeLayout(false);
 			this.floatMenu.ResumeLayout(false);

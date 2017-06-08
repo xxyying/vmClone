@@ -39,11 +39,9 @@ namespace vm_Clone {
 
 			Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(false);
-			Application.Run(new LoginForm(dataFolder));
+			Application.Run(new MainForm(dataFolder));
+			//Application.Run(new LoginForm());
 
-			// if (auth.success) {
-			//		Application.Run(new MainForm());
-			// }
 
 		}
 	}
