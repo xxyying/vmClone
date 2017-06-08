@@ -126,7 +126,7 @@ namespace vm_Clone {
 
 			if (!Directory.Exists(spacesCacheFolder)) {
 				log.Info("Creating directory " + spacesCacheFolder);
-				Directory.CreateDirectory(spacesCacheFolder);
+				Directory.CreateDirectory(spacesCacheFolder); 
 			}
 
 			contactsCacheFolder = cacheFolder + CONTACTS_CACHE_SUBFOLDER + "\\";
