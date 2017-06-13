@@ -117,44 +117,45 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+
   <data name="message_connecting" xml:space="preserve">
-    <value>Connecting ...</value>
+    <value>Conectando ...</value>
     <comment>Info message</comment>
   </data>
   <data name="message_hi" xml:space="preserve">
-    <value>Hi {0}</value>
+    <value>Hola {0}</value>
     <comment>Info message</comment>
   </data>
   <data name="form_configure_close" xml:space="preserve">
-    <value>Close</value>
+    <value>Cerrar</value>
     <comment>Button label</comment>
   </data>
   <data name="form_configure_disconnect" xml:space="preserve">
-    <value>Disconnect</value>
+    <value>Desconectar</value>
     <comment>Button label</comment>
   </data>
   <data name="form_configure_autolaunch" xml:space="preserve">
-    <value>Launch on windows startup</value>
+    <value>Ejecutar al iniciar windows</value>
     <comment>Checkbox label</comment>
   </data>
   <data name="form_configure_login" xml:space="preserve">
-    <value>Login</value>
+    <value>Conectar</value>
     <comment>Button label</comment>
   </data>
   <data name="form_configure_password" xml:space="preserve">
-    <value>Password</value>
+    <value>Contraseña</value>
     <comment>Textbox label</comment>
   </data>
   <data name="form_configure_remember_me" xml:space="preserve">
-    <value>Remember me</value>
+    <value>Recordarme</value>
     <comment>Checkbox label</comment>
   </data>
   <data name="form_configure_user_name" xml:space="preserve">
-    <value>User name</value>
+    <value>Usuario</value>
     <comment>Textbox label</comment>
   </data>
   <data name="window_title_configure" xml:space="preserve">
-    <value>Configure</value>
+    <value>Configuración</value>
     <comment>Window title label</comment>
   </data>
   <data name="window_title_main" xml:space="preserve">
@@ -162,91 +163,91 @@
     <comment>Window title label</comment>
   </data>
   <data name="error_login" xml:space="preserve">
-    <value>Login error</value>
+    <value>Error de conexión</value>
     <comment>Error message</comment>
   </data>
   <data name="form_configure_language" xml:space="preserve">
-    <value>Language</value>
+    <value>Idioma</value>
     <comment>Combo box label</comment>
   </data>
   <data name="form_configure_language_english" xml:space="preserve">
-    <value>English</value>
+    <value>Inglés</value>
     <comment>Language</comment>
   </data>
   <data name="form_configure_language_spanish" xml:space="preserve">
-    <value>Spanish</value>
+    <value>Español</value>
     <comment>Language</comment>
   </data>
   <data name="form_linking_activities" xml:space="preserve">
-    <value>Activities</value>
+    <value>Actividades</value>
     <comment>Checkbox label</comment>
   </data>
   <data name="form_linking_aha_link" xml:space="preserve">
-    <value>AHA link</value>
+    <value>Link AHA</value>
     <comment>Textbox label</comment>
   </data>
   <data name="form_linking_copy" xml:space="preserve">
-    <value>Copy</value>
+    <value>Copiar</value>
     <comment>Tooltip label</comment>
   </data>
   <data name="message_disconnected" xml:space="preserve">
-    <value>Disconnected</value>
+    <value>Desconectado</value>
     <comment>Info message</comment>
   </data>
   <data name="form_linking_files" xml:space="preserve">
-    <value>Files</value>
+    <value>Archivos</value>
     <comment>Checkbox label</comment>
   </data>
   <data name="form_linking_more_results" xml:space="preserve">
-    <value>More results</value>
+    <value>Más resultados</value>
     <comment>Button label</comment>
   </data>
   <data name="form_linking_spaces" xml:space="preserve">
-    <value>Spaces</value>
+    <value>Espacios</value>
     <comment>Checkbox label</comment>
   </data>
   <data name="form_linking_users" xml:space="preserve">
-    <value>Users</value>
+    <value>Usuarios</value>
     <comment>Checkbox label</comment>
   </data>
   <data name="menu_notify_configure" xml:space="preserve">
-    <value>Configure</value>
+    <value>Configuración</value>
     <comment>Menu item label</comment>
   </data>
   <data name="menu_notify_exit" xml:space="preserve">
-    <value>Exit</value>
+    <value>Salir</value>
     <comment>Menu item label</comment>
   </data>
   <data name="menu_notify_show" xml:space="preserve">
-    <value>Show</value>
+    <value>Mostrar</value>
     <comment>Menu item label</comment>
   </data>
   <data name="message_items_copied_to_clipboard" xml:space="preserve">
-    <value>{0} items copied to clipboard</value>
+    <value>{0} elementos copiados al portapapeles</value>
     <comment>Info message</comment>
   </data>
   <data name="form_linking_groups" xml:space="preserve">
-    <value>Groups</value>
+    <value>Grupos</value>
     <comment>Checkbox label</comment>
   </data>
   <data name="error_unable_get_email_domain" xml:space="preserve">
-    <value>Unable to get email domain</value>
+    <value>No se pudo obtener el dominio de email</value>
     <comment>Error message</comment>
   </data>
   <data name="link_email_contact" xml:space="preserve">
-    <value>Contact</value>
+    <value>Contacto</value>
     <comment>Custom label</comment>
   </data>
   <data name="link_email_document" xml:space="preserve">
-    <value>Document</value>
+    <value>Documento</value>
     <comment>Custom label</comment>
   </data>
   <data name="link_email_file" xml:space="preserve">
-    <value>File</value>
+    <value>Archivo</value>
     <comment>Custom label</comment>
   </data>
   <data name="link_email_group" xml:space="preserve">
-    <value>Group</value>
+    <value>Grupo</value>
     <comment>Custom label</comment>
   </data>
   <data name="link_email_post" xml:space="preserve">
@@ -254,19 +255,19 @@
     <comment>Custom label</comment>
   </data>
   <data name="link_email_space" xml:space="preserve">
-    <value>Space</value>
+    <value>Espacio</value>
     <comment>Custom label</comment>
   </data>
   <data name="link_email_task" xml:space="preserve">
-    <value>Task</value>
+    <value>Tarea</value>
     <comment>Custom label</comment>
   </data>
   <data name="link_email_task_action" xml:space="preserve">
-    <value>Task</value>
+    <value>Tarea</value>
     <comment>Custom label</comment>
   </data>
   <data name="link_email_task_approval" xml:space="preserve">
-    <value>Task</value>
+    <value>Tarea</value>
     <comment>Custom label</comment>
   </data>
   <data name="link_email_task_chat" xml:space="preserve">
@@ -274,71 +275,71 @@
     <comment>Custom label</comment>
   </data>
   <data name="menu_linking_copy_email_address" xml:space="preserve">
-    <value>Copy email address</value>
+    <value>Copiar dirección de email</value>
     <comment>Menu item label</comment>
   </data>
   <data name="menu_linking_copy_link" xml:space="preserve">
-    <value>Copy link</value>
+    <value>Copiar enlace</value>
     <comment>Menu item label</comment>
   </data>
   <data name="menu_linking_copy_reference" xml:space="preserve">
-    <value>Copy reference</value>
+    <value>Copiar referencia</value>
     <comment>Menu item label</comment>
   </data>
   <data name="menu_linking_open_in_vmoso" xml:space="preserve">
-    <value>Open in Vmoso</value>
+    <value>Abrir en Vmoso</value>
     <comment>Menu item label</comment>
   </data>
   <data name="form_linking_view_all" xml:space="preserve">
-    <value>View all</value>
+    <value>Ver todo</value>
     <comment>Button label</comment>
   </data>
   <data name="menu_linking_download" xml:space="preserve">
-    <value>Download</value>
+    <value>Descargar</value>
     <comment>Menu item label</comment>
   </data>
   <data name="message_enter_aha_symbol" xml:space="preserve">
-    <value>Enter AHA symbol (@, &amp;, #)</value>
+    <value>Introduzca un símbolo AHA (@, &amp;, #)</value>
     <comment>Info message</comment>
   </data>
   <data name="form_linking_column_recent_items" xml:space="preserve">
-    <value>Recent items</value>
+    <value>Elementos recientes</value>
     <comment>Column label</comment>
   </data>
   <data name="form_linking_column_clipboard" xml:space="preserve">
-    <value>AHA Clipboard</value>
+    <value>Portapapeles AHA</value>
     <comment>Column label</comment>
   </data>
   <data name="form_linking_hide_clipboard" xml:space="preserve">
-    <value>Hide Catchboard</value>
+    <value>Ocultar portapapeles</value>
     <comment>Button label</comment>
   </data>
   <data name="form_linking_show_clipboard" xml:space="preserve">
-    <value>Show Catchboard</value>
+    <value>Mostrar portapapeles</value>
     <comment>Button label</comment>
   </data>
   <data name="menu_linking_insert_email_address" xml:space="preserve">
-    <value>Insert email address</value>
+    <value>Insertar correo electrónico</value>
     <comment>Menu item label</comment>
   </data>
   <data name="menu_linking_insert_link" xml:space="preserve">
-    <value>Insert link</value>
+    <value>Insertar enlace</value>
     <comment>Menu item label</comment>
   </data>
   <data name="menu_linking_insert_reference" xml:space="preserve">
-    <value>Insert reference</value>
+    <value>Insertar referencia</value>
     <comment>Menu item label</comment>
   </data>
   <data name="form_linking_column_all_items" xml:space="preserve">
-    <value>All items</value>
+    <value>Todos los elementos</value>
     <comment>Column label</comment>
   </data>
   <data name="form_linking_all" xml:space="preserve">
-    <value>All</value>
+    <value>Todo</value>
     <comment>Checkbox label</comment>
   </data>
   <data name="form_linking_content" xml:space="preserve">
-    <value>Content</value>
+    <value>Contenido</value>
     <comment>Checkbox label</comment>
   </data>
   <data name="form_linking_email" xml:space="preserve">
@@ -346,283 +347,287 @@
     <comment>Button label</comment>
   </data>
   <data name="form_linking_link" xml:space="preserve">
-    <value>Link</value>
+    <value>Enlace</value>
     <comment>Button label</comment>
   </data>
   <data name="form_linking_reference" xml:space="preserve">
-    <value>Reference</value>
+    <value>Referencia</value>
     <comment>Button label</comment>
   </data>
   <data name="error_getting_aha_items" xml:space="preserve">
-    <value>Error getting vmoso items</value>
+    <value>Error recuperando elementos</value>
     <comment>Error message</comment>
   </data>
   <data name="form_contacts_column_contacts" xml:space="preserve">
-    <value>Contacts</value>
+    <value>Contactos</value>
     <comment>Column label</comment>
   </data>
   <data name="error_connection_lost" xml:space="preserve">
-    <value>Network connection to Vmoso server is lost. Would you like to reconnect?</value>
+    <value>La conexion con vmoso se ha perdido. ¿Desea volver a conectar?</value>
     <comment>Error message</comment>
   </data>
   <data name="error_deleting_contact" xml:space="preserve">
-    <value>Error deleting contact</value>
+    <value>Error al eliminar el contacto</value>
     <comment>Error message</comment>
   </data>
   <data name="error_saving_contact" xml:space="preserve">
-    <value>Error saving contact</value>
+    <value>Error guardando el contacto</value>
     <comment>Error message</comment>
   </data>
   <data name="error_searching_contact" xml:space="preserve">
-    <value>Error searching contact</value>
+    <value>Error buscando el contacto</value>
     <comment>Error message</comment>
   </data>
   <data name="error_sending_invitation" xml:space="preserve">
-    <value>Error sending invitation</value>
+    <value>Error al enviar la invitación</value>
     <comment>Error message</comment>
   </data>
   <data name="error_updating_stream" xml:space="preserve">
-    <value>Error updating stream</value>
+    <value>Error al actualizar actividades</value>
     <comment>Error message</comment>
   </data>
   <data name="form_main_tab_contacts" xml:space="preserve">
-    <value>Contacts</value>
+    <value>Contactos</value>
     <comment>Tab label</comment>
   </data>
   <data name="form_main_tab_linking" xml:space="preserve">
-    <value>Linking</value>
+    <value>Enlazar</value>
     <comment>Tab label</comment>
   </data>
   <data name="form_main_tab_share" xml:space="preserve">
-    <value>Share</value>
+    <value>Compartir</value>
     <comment>Tab label</comment>
   </data>
   <data name="form_main_tab_stream" xml:space="preserve">
-    <value>Stream</value>
+    <value>Actividades</value>
     <comment>Tabl label</comment>
   </data>
   <data name="form_contacts_title" xml:space="preserve">
-    <value>Create contacts</value>
+    <value>Crear contactos</value>
     <comment>Title label</comment>
   </data>
   <data name="form_linking_title" xml:space="preserve">
-    <value>Vmoso linking</value>
+    <value>Enlazar con Vmoso</value>
     <comment>Title label</comment>
   </data>
   <data name="form_share_title" xml:space="preserve">
-    <value>Share links and files</value>
+    <value>Compartir enlaces y archivos</value>
     <comment>Title label</comment>
   </data>
   <data name="form_stream_title" xml:space="preserve">
-    <value>Vmoso activity</value>
+    <value>Actividad de Vmoso</value>
     <comment>Title label</comment>
   </data>
   <data name="message_contact_deleted_successfully" xml:space="preserve">
-    <value>Contact deleted successfully</value>
+    <value>Contacto eliminado correctamente</value>
     <comment>Info message</comment>
   </data>
   <data name="message_contact_saved_successfully" xml:space="preserve">
-    <value>Contact saved successfully</value>
+    <value>Contacto guardado correctamente</value>
     <comment>Info message</comment>
   </data>
   <data name="message_email_already_exists_in_clipboard" xml:space="preserve">
-    <value>Email already exists in clipboard</value>
+    <value>La dirección de correo ya existe en el portapapeles</value>
     <comment>Info message</comment>
   </data>
   <data name="message_invalid_email_address" xml:space="preserve">
-    <value>Invalid email address</value>
+    <value>Dirección de correo inválida</value>
     <comment>Info message</comment>
   </data>
   <data name="message_invalid_phone_number" xml:space="preserve">
-    <value>Invalid phone number</value>
+    <value>Número de teléfono inválido</value>
     <comment>Info message</comment>
   </data>
   <data name="message_invitation_sent" xml:space="preserve">
-    <value>Invitation sent</value>
+    <value>Invitación enviada</value>
     <comment>Info message</comment>
   </data>
   <data name="message_link_already_exists_in_clipboard" xml:space="preserve">
-    <value>Link already exists in clipboard</value>
+    <value>El enlace ya existe en el portapapeles</value>
     <comment>Info message</comment>
   </data>
   <data name="message_new_contact" xml:space="preserve">
-    <value>New contact</value>
+    <value>Nuevo contacto</value>
     <comment>Info message</comment>
   </data>
   <data name="message_reference_already_exists_in_clipboard" xml:space="preserve">
-    <value>Reference already exists in clipboard</value>
+    <value>La referencia ya existe en el portapapeles</value>
     <comment>Info message</comment>
   </data>
   <data name="message_select_items_to_copy" xml:space="preserve">
-    <value>Select items to copy</value>
+    <value>Seleccione elementos a copiar</value>
     <comment>Info message</comment>
   </data>
   <data name="message_select_items_to_insert" xml:space="preserve">
-    <value>Select items to insert</value>
+    <value>Seleccione elementos a insertar</value>
     <comment>Info message</comment>
   </data>
   <data name="message_select_items_to_remove" xml:space="preserve">
-    <value>Select items to remove</value>
+    <value>Seleccione elementos a eliminar</value>
     <comment>Info message</comment>
   </data>
   <data name="message_user_already_exists_as_contact" xml:space="preserve">
-    <value>The user {0} already exists as contact</value>
+    <value>El usuario {0} ya existe como contacto</value>
+    <comment>Info message</comment>
+  </data>
+  <data name="message_user_already_exists_as_vmoso_user" xml:space="preserve">
+    <value>El usuario {0} ya existe como usuario en Vmoso</value>
     <comment>Info message</comment>
   </data>
   <data name="window_title_error_connection_lost" xml:space="preserve">
-    <value>Vmoso BKW connection lost</value>
+    <value>Conexión perdida</value>
     <comment>Window title label</comment>
   </data>
   <data name="common_cancel" xml:space="preserve">
-    <value>Cancel</value>
+    <value>Cancelar</value>
     <comment>Comon label</comment>
   </data>
   <data name="common_close" xml:space="preserve">
-    <value>Close</value>
+    <value>Cerrar</value>
     <comment>Comon label</comment>
   </data>
   <data name="common_delete" xml:space="preserve">
-    <value>Delete</value>
+    <value>Eliminar</value>
     <comment>Comon label</comment>
   </data>
   <data name="common_done" xml:space="preserve">
-    <value>Done</value>
+    <value>Hecho</value>
     <comment>Comon label</comment>
   </data>
   <data name="common_loading" xml:space="preserve">
-    <value>Loading...</value>
+    <value>Cargando...</value>
     <comment>Comon label</comment>
   </data>
   <data name="error_creating_bookmark" xml:space="preserve">
-    <value>Error creating bookmark</value>
+    <value>Error al crear el marcador</value>
     <comment>Error message</comment>
   </data>
   <data name="error_creating_comment" xml:space="preserve">
-    <value>Error creating comment</value>
+    <value>Error al crear el comentario</value>
     <comment>Error message</comment>
   </data>
   <data name="error_creating_file" xml:space="preserve">
-    <value>Error creating file</value>
+    <value>Error al crear el archivo</value>
     <comment>Error message</comment>
   </data>
   <data name="error_deleting_comment" xml:space="preserve">
-    <value>Error deleting comment</value>
+    <value>Error al eliminar el comentario</value>
     <comment>Error message</comment>
   </data>
   <data name="error_getting_comments" xml:space="preserve">
-    <value>Error getting comments</value>
+    <value>Error al recuperar comentarios</value>
     <comment>Error message</comment>
   </data>
   <data name="error_getting_vmoso_content" xml:space="preserve">
-    <value>Error getting vmoso content</value>
+    <value>Error al recuperar contenido de Vmoso</value>
     <comment>Error message</comment>
   </data>
   <data name="error_replying_comment" xml:space="preserve">
-    <value>Error replaying comment</value>
+    <value>Error al responder el comentario</value>
     <comment>Error message</comment>
   </data>
   <data name="error_searching_stream" xml:space="preserve">
-    <value>Error searching activity stream</value>
+    <value>Error al buscar actividades</value>
     <comment>Error message</comment>
   </data>
   <data name="error_updating_bookmark" xml:space="preserve">
-    <value>Error updating bookmark</value>
+    <value>Error al actualizar el marcador</value>
     <comment>Error message</comment>
   </data>
   <data name="error_updating_comment" xml:space="preserve">
-    <value>Error updating comment</value>
+    <value>Error al actualizar el comentario</value>
     <comment>Error message</comment>
   </data>
   <data name="error_updating_file" xml:space="preserve">
-    <value>Error updating file</value>
+    <value>Error al actualizar el archivo</value>
     <comment>Error message</comment>
   </data>
   <data name="form_contacts_enable_contact_catcher" xml:space="preserve">
-    <value>Enable contact catcher</value>
+    <value>Habilitar capturador de contactos</value>
     <comment>Checkbox label</comment>
   </data>
   <data name="form_linking_insert" xml:space="preserve">
-    <value>Insert</value>
+    <value>Insertar</value>
     <comment>Tooltip label</comment>
   </data>
   <data name="form_share_add_spaces" xml:space="preserve">
-    <value>Add spaces</value>
+    <value>Añadir espacios</value>
     <comment>Tooltip label</comment>
   </data>
   <data name="form_share_check_spaces_to_add" xml:space="preserve">
-    <value>Check spaces to add</value>
+    <value>Marque espacios a añadir</value>
     <comment>Tooltip label</comment>
   </data>
   <data name="form_share_create_bookmark" xml:space="preserve">
-    <value>Create bookmark</value>
+    <value>Crear marcador</value>
     <comment>Button label</comment>
   </data>
   <data name="form_share_create_file" xml:space="preserve">
-    <value>Create file</value>
+    <value>Crear archivo</value>
     <comment>Button label</comment>
   </data>
   <data name="form_share_description" xml:space="preserve">
-    <value>Description</value>
+    <value>Descripción</value>
     <comment>Textbox label</comment>
   </data>
   <data name="form_share_enable_link_catcher" xml:space="preserve">
-    <value>Enable link/file catcher</value>
+    <value>Habilitar capturador de enlaces/archivos</value>
     <comment>Checkbox label</comment>
   </data>
   <data name="form_share_share" xml:space="preserve">
-    <value>Share</value>
+    <value>Compartir</value>
     <comment>Button label</comment>
   </data>
   <data name="form_share_column_shared_into_spaces" xml:space="preserve">
-    <value>Shared into spaces</value>
+    <value>Compartido en espacios</value>
     <comment>Column label</comment>
   </data>
   <data name="form_share_column_shared_items" xml:space="preserve">
-    <value>Shared items</value>
+    <value>Elementos compartidos</value>
     <comment>Column label</comment>
   </data>
   <data name="form_share_column_share_to_spaces" xml:space="preserve">
-    <value>Share to spaces</value>
+    <value>Compartir en espacios</value>
     <comment>Column label</comment>
   </data>
   <data name="form_share_title_name" xml:space="preserve">
-    <value>Title/Name</value>
+    <value>Título/Nombre</value>
     <comment>Textbox label</comment>
   </data>
   <data name="form_share_update_bookmark" xml:space="preserve">
-    <value>Update bookmark</value>
+    <value>Actualizar marcador</value>
     <comment>Button label</comment>
   </data>
   <data name="form_share_update_file" xml:space="preserve">
-    <value>Update file</value>
+    <value>Actualizar archivos</value>
     <comment>Button label</comment>
   </data>
   <data name="form_share_upload_new_version" xml:space="preserve">
-    <value>Upload new version</value>
+    <value>Subir nueva versión</value>
     <comment>Button label</comment>
   </data>
   <data name="form_stream_column_activities" xml:space="preserve">
-    <value>Activities</value>
+    <value>Actividades</value>
     <comment>Column label</comment>
   </data>
   <data name="form_stream_new_comment" xml:space="preserve">
-    <value>New comment</value>
+    <value>Nuevo comentario</value>
     <comment>Button label</comment>
   </data>
   <data name="form_stream_summary_link_description" xml:space="preserve">
-    <value>Description</value>
+    <value>Descripción</value>
     <comment>Custom label</comment>
   </data>
   <data name="form_stream_summary_link_link" xml:space="preserve">
-    <value>Link</value>
+    <value>Enlace</value>
     <comment>Custom label</comment>
   </data>
   <data name="form_stream_summary_link_title" xml:space="preserve">
-    <value>Title</value>
+    <value>Título</value>
     <comment>Cutom label</comment>
   </data>
   <data name="form_contacts_connected" xml:space="preserve">
-    <value>Connected</value>
+    <value>Conectado</value>
     <comment>Combobox item label</comment>
   </data>
   <data name="form_contacts_contact_email" xml:space="preserve">
@@ -630,147 +635,91 @@
     <comment>Textbox label</comment>
   </data>
   <data name="form_contacts_contact_imn" xml:space="preserve">
-    <value>IMN</value>
+    <value>Teléfono</value>
     <comment>Textbox label</comment>
   </data>
   <data name="form_contacts_contact_name" xml:space="preserve">
-    <value>Name</value>
+    <value>Nombre</value>
     <comment>Textbox label</comment>
   </data>
   <data name="form_contacts_delete_contact" xml:space="preserve">
-    <value>Delete contact</value>
+    <value>Borrar contacto</value>
     <comment>Button label</comment>
   </data>
   <data name="form_contacts_invitation" xml:space="preserve">
-    <value>Invitation to vmoso</value>
+    <value>Invitación a Vmoso</value>
     <comment>Group label</comment>
   </data>
   <data name="form_contacts_invitation_message" xml:space="preserve">
-    <value>Invitation message</value>
+    <value>Mensaje de invitación</value>
     <comment>Textbox label</comment>
   </data>
   <data name="form_contacts_invite_contact" xml:space="preserve">
-    <value>Invite contact</value>
+    <value>Invitar contacto</value>
     <comment>Button label</comment>
   </data>
   <data name="form_contacts_invite_trusted" xml:space="preserve">
-    <value>Trusted</value>
+    <value>De confianza</value>
     <comment>Combobox item label</comment>
   </data>
   <data name="form_contacts_save_contact" xml:space="preserve">
-    <value>Save contact</value>
+    <value>Guardar contacto</value>
     <comment>Button label</comment>
   </data>
   <data name="message_stream_getting_comments" xml:space="preserve">
-    <value>Getting comments...</value>
+    <value>Recuperando comentarios...</value>
     <comment>Info message</comment>
   </data>
   <data name="message_stream_getting_summary" xml:space="preserve">
-    <value>Getting summary...</value>
+    <value>Recuperando resumen...</value>
     <comment>Info message</comment>
   </data>
   <data name="message_stream_searching_stream" xml:space="preserve">
-    <value>Searching activity stream...</value>
+    <value>Buscando actividades...</value>
     <comment>Info message</comment>
   </data>
   <data name="form_share_recent_spaces" xml:space="preserve">
-    <value>Recent spaces</value>
+    <value>Espacios recientes</value>
     <comment>TreeNode label</comment>
   </data>
   <data name="form_configure_language_japanese" xml:space="preserve">
-    <value>Japanese</value>
+    <value>Japonés</value>
     <comment>Language</comment>
   </data>
   <data name="form_stream_days_ago" xml:space="preserve">
-    <value>{0} days ago</value>
+    <value>Hace {0} días</value>
     <comment>Custom label</comment>
   </data>
   <data name="form_stream_hours_ago" xml:space="preserve">
-    <value>{0} hours ago</value>
+    <value>Hace {0} horas</value>
     <comment>Custom label</comment>
   </data>
   <data name="form_stream_minutes_ago" xml:space="preserve">
-    <value>{0} minutes ago</value>
+    <value>Hace {0} minutos</value>
     <comment>Custom label</comment>
   </data>
   <data name="form_stream_now" xml:space="preserve">
-    <value>Now</value>
+    <value>Ahora</value>
     <comment>Custom label</comment>
   </data>
   <data name="menu_stream_comments_continue" xml:space="preserve">
-    <value>Continue</value>
+    <value>Continuar</value>
     <comment>Menu item label</comment>
   </data>
   <data name="menu_stream_comments_delete" xml:space="preserve">
-    <value>Delete</value>
+    <value>Eliminar</value>
     <comment>Menu item label</comment>
   </data>
   <data name="menu_stream_comments_edit" xml:space="preserve">
-    <value>Edit</value>
+    <value>Editar</value>
     <comment>Menu item label</comment>
   </data>
   <data name="menu_stream_comments_reply" xml:space="preserve">
-    <value>Reply</value>
+    <value>Responder</value>
     <comment>Menu item label</comment>
   </data>
   <data name="menu_stream_open_in_vmoso" xml:space="preserve">
-    <value>Open in Vmoso</value>
+    <value>Abrir en Vmoso</value>
     <comment>Menu item label</comment>
-  </data>
-  <data name="error_bad_input" xml:space="preserve">
-    <value>Bad input</value>
-    <comment>Error message</comment>
-  </data>
-  <data name="error_integer_required" xml:space="preserve">
-    <value>Integer value required</value>
-    <comment>Error message</comment>
-  </data>
-  <data name="form_configure_advanced_settings" xml:space="preserve">
-    <value>Advanced settings</value>
-    <comment>Button label</comment>
-  </data>
-  <data name="form_settings_cancel" xml:space="preserve">
-    <value>Cancel</value>
-    <comment>Button label</comment>
-  </data>
-  <data name="form_settings_proxy_authorization" xml:space="preserve">
-    <value>Proxy authorization</value>
-    <comment>Group label</comment>
-  </data>
-  <data name="form_settings_proxy_host_port" xml:space="preserve">
-    <value>Proxy host/port</value>
-    <comment>Textbox label</comment>
-  </data>
-  <data name="form_settings_proxy_password" xml:space="preserve">
-    <value>Password</value>
-    <comment>Textbox label</comment>
-  </data>
-  <data name="form_settings_proxy_user" xml:space="preserve">
-    <value>User</value>
-    <comment>Textbox label</comment>
-  </data>
-  <data name="form_settings_proxy_use_proxy" xml:space="preserve">
-    <value>Connect to vmoso using a proxy</value>
-    <comment>Checkbox label</comment>
-  </data>
-  <data name="form_settings_save" xml:space="preserve">
-    <value>Save</value>
-    <comment>Button label</comment>
-  </data>
-  <data name="form_settings_tab_proxy" xml:space="preserve">
-    <value>Proxy</value>
-    <comment>Tab label</comment>
-  </data>
-  <data name="window_title_settings" xml:space="preserve">
-    <value>Settings</value>
-    <comment>Window title label</comment>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Settings.Designer" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Settings.Designer.cs;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
-  </data>
-  <data name="message_user_already_exists_as_vmoso_user" xml:space="preserve">
-    <value>The user {0} already exists as vmoso user</value>
-    <comment>Info message</comment>
   </data>
 </root>

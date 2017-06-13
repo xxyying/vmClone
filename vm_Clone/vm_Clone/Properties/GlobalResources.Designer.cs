@@ -39,7 +39,7 @@ namespace vm_Clone.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("VmosoBKW.Properties.GlobalResources", typeof(GlobalResources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("vm_Clone.Properties.GlobalResources", typeof(GlobalResources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

@@ -105,7 +105,7 @@ namespace vm_Clone {
 			this.LoginButton.FlatAppearance.BorderColor = System.Drawing.Color.White;
 			this.LoginButton.FlatAppearance.BorderSize = 0;
 			this.LoginButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.LoginButton.Font = new System.Drawing.Font("Segoe UI Semibold", 12.75F, System.Drawing.FontStyle.Bold);
+			this.LoginButton.Font = new System.Drawing.Font("Segoe UI Semibold", 14.75F, System.Drawing.FontStyle.Bold);
 			this.LoginButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
 			this.LoginButton.Location = new System.Drawing.Point(595, 374);
 			this.LoginButton.Name = "LoginButton";
@@ -192,11 +192,9 @@ namespace vm_Clone {
 			this.toolStripStatusLabelMessage.BackColor = System.Drawing.SystemColors.Control;
 			this.toolStripStatusLabelMessage.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
 			this.toolStripStatusLabelMessage.Name = "toolStripStatusLabelMessage";
-			this.toolStripStatusLabelMessage.Size = new System.Drawing.Size(0, 17);
-			// 
-			// backgroundLoginWorker
-			// 
-			this.backgroundLoginWorker.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundLoginWorker_DoWork);
+			this.toolStripStatusLabelMessage.Size = new System.Drawing.Size(340, 17);
+			this.toolStripStatusLabelMessage.Text = "...";
+			this.toolStripStatusLabelMessage.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			// 
 			// clearBtn
 			// 
@@ -238,7 +236,6 @@ namespace vm_Clone {
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Vmoso Big Knowledge Widget Login";
 			this.Load += new System.EventHandler(this.LoginForm_Load);
-			this.Shown += new System.EventHandler(this.LoginForm_Shown);
 			((System.ComponentModel.ISupportInitialize)(this.logoPicture)).EndInit();
 			this.statusStrip1.ResumeLayout(false);
 			this.statusStrip1.PerformLayout();
@@ -263,7 +260,7 @@ namespace vm_Clone {
 		private System.Windows.Forms.NotifyIcon notifyIcon;
 		private StatusStrip statusStrip1;
 		private ToolStripStatusLabel toolStripStatusLabelMessage;
-		private Timer timerMessageChange;
+		private System.Windows.Forms.Timer timerMessageChange;
 		private System.ComponentModel.BackgroundWorker backgroundLoginWorker;
 		private Button clearBtn;
 	}
